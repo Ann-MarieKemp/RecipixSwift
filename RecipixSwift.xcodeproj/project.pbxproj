@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		7D591E3524AD3B780075A5DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D591E3424AD3B780075A5DA /* AppDelegate.swift */; };
 		7D591E3724AD3B780075A5DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D591E3624AD3B780075A5DA /* SceneDelegate.swift */; };
-		7D591E3924AD3B780075A5DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D591E3824AD3B780075A5DA /* ViewController.swift */; };
+		7D591E3924AD3B780075A5DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D591E3824AD3B780075A5DA /* LoginViewController.swift */; };
 		7D591E3C24AD3B780075A5DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D591E3A24AD3B780075A5DA /* Main.storyboard */; };
 		7D591E3E24AD3B7C0075A5DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D591E3D24AD3B7C0075A5DA /* Assets.xcassets */; };
 		7D591E4124AD3B7C0075A5DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D591E3F24AD3B7C0075A5DA /* LaunchScreen.storyboard */; };
 		7D591E4924AD47ED0075A5DA /* Oswald-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D591E4824AD47ED0075A5DA /* Oswald-VariableFont_wght.ttf */; };
+		7D591E5024AD52DB0075A5DA /* PhotoSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D591E4F24AD52DB0075A5DA /* PhotoSelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D591E3124AD3B780075A5DA /* RecipixSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipixSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D591E3424AD3B780075A5DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D591E3624AD3B780075A5DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7D591E3824AD3B780075A5DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D591E3824AD3B780075A5DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7D591E3B24AD3B780075A5DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D591E3D24AD3B7C0075A5DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D591E4024AD3B7C0075A5DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D591E4224AD3B7C0075A5DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D591E4824AD47ED0075A5DA /* Oswald-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		7D591E4F24AD52DB0075A5DA /* PhotoSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoSelectionViewController.swift; path = RecipixSwift/Views/PhotoSelectionViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,9 @@
 			children = (
 				7D591E3424AD3B780075A5DA /* AppDelegate.swift */,
 				7D591E3624AD3B780075A5DA /* SceneDelegate.swift */,
-				7D591E3824AD3B780075A5DA /* ViewController.swift */,
-				7D591E3A24AD3B780075A5DA /* Main.storyboard */,
+				7D591E4E24AD52390075A5DA /* Models */,
+				7D591E4D24AD52190075A5DA /* Controllers */,
+				7D591E4C24AD52060075A5DA /* Views */,
 				7D591E3D24AD3B7C0075A5DA /* Assets.xcassets */,
 				7D591E3F24AD3B7C0075A5DA /* LaunchScreen.storyboard */,
 				7D591E4224AD3B7C0075A5DA /* Info.plist */,
@@ -76,6 +79,30 @@
 				7D591E4824AD47ED0075A5DA /* Oswald-VariableFont_wght.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7D591E4C24AD52060075A5DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D591E4F24AD52DB0075A5DA /* PhotoSelectionViewController.swift */,
+				7D591E3824AD3B780075A5DA /* LoginViewController.swift */,
+				7D591E3A24AD3B780075A5DA /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7D591E4D24AD52190075A5DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7D591E4E24AD52390075A5DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +177,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D591E3924AD3B780075A5DA /* ViewController.swift in Sources */,
+				7D591E5024AD52DB0075A5DA /* PhotoSelectionViewController.swift in Sources */,
+				7D591E3924AD3B780075A5DA /* LoginViewController.swift in Sources */,
 				7D591E3524AD3B780075A5DA /* AppDelegate.swift in Sources */,
 				7D591E3724AD3B780075A5DA /* SceneDelegate.swift in Sources */,
 			);
