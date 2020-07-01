@@ -9,9 +9,61 @@
     <customFonts key="customFonts">
         <array key="Oswald-VariableFont_wght.ttf">
             <string>Oswald-Regular</string>
+            <string>Oswald-Regular_SemiBold</string>
         </array>
     </customFonts>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="pY7-mX-hBk">
+            <objects>
+                <viewController id="5F5-ou-rgh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Flf-ek-BFP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="y9K-Eb-ofZ">
+                                <rect key="frame" x="32.5" y="333" width="349" height="230"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4a-7u-3lh">
+                                        <rect key="frame" x="0.0" y="0.0" width="349" height="100"/>
+                                        <color key="backgroundColor" red="0.91764705879999997" green="0.60392156860000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="t1L-mL-90S"/>
+                                            <constraint firstAttribute="width" constant="349" id="xPt-xZ-jFr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Oswald-Regular_SemiBold" family="Oswald" pointSize="30"/>
+                                        <state key="normal" title="Take Photo">
+                                            <color key="titleColor" red="0.99157458539999999" green="0.96978050469999999" blue="0.90587347750000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="0OI-wp-AMn">
+                                        <rect key="frame" x="0.0" y="130" width="349" height="100"/>
+                                        <color key="backgroundColor" red="0.91764705879999997" green="0.60392156860000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="349" id="9cP-y2-QYA"/>
+                                            <constraint firstAttribute="height" constant="100" id="vcL-HT-NbX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Oswald-Regular_SemiBold" family="Oswald" pointSize="30"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="Choose Photo From        Camera Roll">
+                                            <color key="titleColor" red="0.99157458539999999" green="0.96978050469999999" blue="0.90587347750000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99157458539999999" green="0.96978050469999999" blue="0.90587347750000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="y9K-Eb-ofZ" firstAttribute="centerY" secondItem="Flf-ek-BFP" secondAttribute="centerY" id="Qvo-xd-PkU"/>
+                            <constraint firstItem="y9K-Eb-ofZ" firstAttribute="centerX" secondItem="Flf-ek-BFP" secondAttribute="centerX" id="Tom-LT-Vl5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5wy-s3-zcg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akY-S7-5H7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-589.85507246376812" y="-250.44642857142856"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -20,13 +72,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YK3-38-DGr">
-                                <rect key="frame" x="81" y="433" width="249" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgG-a3-ogj">
-                                <rect key="frame" x="88" y="330" width="238" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Please Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgG-a3-ogj">
+                                <rect key="frame" x="118" y="330" width="178" height="53"/>
                                 <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -34,8 +81,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99547082190000002" green="0.96978265050000001" blue="0.90587335820000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="YK3-38-DGr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YeM-3J-C8y"/>
-                            <constraint firstItem="YK3-38-DGr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kxT-3Q-Uyn"/>
+                            <constraint firstItem="ZgG-a3-ogj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hf2-fh-aQ4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
