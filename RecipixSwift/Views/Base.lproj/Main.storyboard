@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D0Q-F3-pjN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="Oswald-VariableFont_wght.ttf">
-            <string>Oswald-Regular</string>
             <string>Oswald-Regular_SemiBold</string>
         </array>
     </customFonts>
@@ -69,10 +69,68 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5wy-s3-zcg"/>
                     </view>
+                    <navigationItem key="navigationItem" id="4tb-9R-NoA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akY-S7-5H7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-589.85507246376812" y="-250.44642857142856"/>
+            <point key="canvasLocation" x="1205.7971014492755" y="-250.44642857142856"/>
+        </scene>
+        <!--Photos Or Recipes View Controller-->
+        <scene sceneID="Kv6-tL-OYz">
+            <objects>
+                <viewController id="8mY-Z7-o18" customClass="PhotosOrRecipesViewController" customModule="RecipixSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PIc-Ba-KM7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ukq-PJ-Ehj">
+                                <rect key="frame" x="33" y="471" width="349" height="100"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.60392156860000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="349" id="ajl-j0-Hp7"/>
+                                    <constraint firstAttribute="height" constant="100" id="ovy-SQ-92Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Oswald-Regular_SemiBold" family="Oswald" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="View All Recipes">
+                                    <color key="titleColor" red="0.99157458539999999" green="0.96978050469999999" blue="0.90587347750000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="j8h-rG-cin">
+                                <rect key="frame" x="33" y="331" width="349" height="100"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.60392156860000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="cno-wh-Jgr"/>
+                                    <constraint firstAttribute="width" constant="349" id="fiw-JA-V4A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Oswald-Regular_SemiBold" family="Oswald" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Add a Recipe">
+                                    <color key="titleColor" red="0.99157458539999999" green="0.96978050469999999" blue="0.90587347750000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="RecipixCream"/>
+                        <viewLayoutGuide key="safeArea" id="LHk-7F-q7O"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g2b-xW-W63"/>
+                    <connections>
+                        <segue destination="5F5-ou-rgh" kind="show" id="65b-v0-Y9x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1QG-qX-UAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331.8840579710145" y="-250.44642857142856"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -82,23 +140,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Please Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgG-a3-ogj">
-                                <rect key="frame" x="118" y="330" width="178" height="53"/>
-                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgG-a3-ogj">
+                                <rect key="frame" x="108.5" y="331" width="197" height="52"/>
+                                <fontDescription key="fontDescription" name="Oswald-Regular_SemiBold" family="Oswald" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVu-wY-bgM">
+                                <rect key="frame" x="32.5" y="398" width="349" height="100"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.60392156860000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="349" id="0MH-iL-4Pa"/>
+                                    <constraint firstAttribute="height" constant="100" id="gGs-gK-H8e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Oswald-Regular_SemiBold" family="Oswald" pointSize="30"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="0.99157458539999999" green="0.96978050469999999" blue="0.90587347750000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                                        <color key="value" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99547082190000002" green="0.96978265050000001" blue="0.90587335820000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ZgG-a3-ogj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hf2-fh-aQ4"/>
+                            <constraint firstItem="dVu-wY-bgM" firstAttribute="top" secondItem="ZgG-a3-ogj" secondAttribute="bottom" constant="15" id="Tlp-wg-6Py"/>
+                            <constraint firstItem="dVu-wY-bgM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rnC-Fc-bLC"/>
+                            <constraint firstItem="dVu-wY-bgM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wtl-GT-oOi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Hsq-K1-0dX"/>
+                    <connections>
+                        <segue destination="8mY-Z7-o18" kind="show" id="SnS-2q-9N4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+            <point key="canvasLocation" x="-452.17391304347831" y="-250.44642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pws-WY-e7A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D0Q-F3-pjN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Id-xG-3CM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ynC-fk-bVX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2i-w7-mrh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1362.3188405797102" y="-250.44642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="RecipixCream">
+            <color red="0.99500000476837158" green="0.97000002861022949" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
 </document>
